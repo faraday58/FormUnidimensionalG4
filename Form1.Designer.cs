@@ -97,6 +97,7 @@
             this.btnDefinirTamaño.TabIndex = 2;
             this.btnDefinirTamaño.Text = "Definir Tamaño";
             this.btnDefinirTamaño.UseVisualStyleBackColor = true;
+            this.btnDefinirTamaño.Click += new System.EventHandler(this.btnDefinirTamaño_Click);
             // 
             // btnAgregarElemento
             // 
@@ -106,6 +107,7 @@
             this.btnAgregarElemento.TabIndex = 2;
             this.btnAgregarElemento.Text = "Agregar";
             this.btnAgregarElemento.UseVisualStyleBackColor = true;
+            this.btnAgregarElemento.Click += new System.EventHandler(this.btnAgregarElemento_Click);
             // 
             // chkbAleatorio
             // 

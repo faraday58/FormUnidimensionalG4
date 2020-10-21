@@ -42,17 +42,35 @@ namespace FormUnidimensionalG4
                 }
                 else
                 {
-                indice = value;
-            }
+                    indice = value;
+                }
             }
         }
 
         public void Agregar(float elemento, int indice)
         {
-            A[indice] = elemento;
+            Indice = indice;
+            A[Indice] = elemento;
 
         }
+        //10 20 30 40
+        public override string ToString()
+        {
+            string A="";
+            foreach(float elemento in this.A   )
+            {
+                if( A=="")
+                {
+                    A = elemento.ToString();
+                }
+                else
+                {
+                    A = A + " , " + elemento.ToString();
+                }               
+            }
 
+            return A;
+        }
 
 
     }
